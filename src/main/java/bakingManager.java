@@ -6,7 +6,6 @@ public class bakingManager {
     //Methods
 
     public static String listAllStock() {
-
-    return stock.;
+    return null;
     }
 }

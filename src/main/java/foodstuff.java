@@ -5,13 +5,13 @@ public class foodstuff {
     //Properties
     private String foodType;
     private String ingredients;
-    private BigDecimal price;
+    private Double price;
     private String itemName;
-    private boolean soldStatus;
+    private Boolean soldStatus;
 
     //Constructors, for creating new food item object. uses methods to check if the value is valid
 
-    public foodstuff(String foodType, String ingredients, BigDecimal price, String itemName) {
+    public foodstuff(String foodType, String ingredients, Double price, String itemName) {
         setFoodType(foodType);
         setIngredients(ingredients);
         setPrice(price);
@@ -34,8 +34,10 @@ public class foodstuff {
             this.ingredients = ingredients;
         }
     }
-    private void setPrice(BigDecimal price){
-        if(price == null){}
+    private void setPrice(Double price){
+        if(price == null){
+            this.price = 0.0;
+        }
     }
 
 

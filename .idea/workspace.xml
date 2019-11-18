@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a989ff4f-43f1-4559-8341-b4fd4fcd46d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foodstuff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bakingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bakingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/foodstuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foodstuff.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
