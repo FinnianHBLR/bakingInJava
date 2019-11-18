@@ -4,4 +4,9 @@ public class bakingManager {
     //Constructors
 
     //Methods
+
+    public static String listAllStock() {
+
+    return stock.;
+    }
 }
