@@ -1,7 +1,7 @@
 import java.util.List;
 import  java.math.BigDecimal; //use bigDecimal in the math libery so it wont complane
 
-public class foodstuff {
+public class FoodStuff {
     //Properties
     private String foodType;
     private String ingredients;
@@ -11,11 +11,11 @@ public class foodstuff {
 
     //Constructors, for creating new food item object. uses methods to check if the value is valid
 
-    public foodstuff(String foodType, String ingredients, Double price, String itemName) {
+    public FoodStuff(String foodType, String ingredients, Double price, String itemName) {
         setFoodType(foodType);
         setIngredients(ingredients);
         setPrice(price);
-        this.soldStatus = false; //when an item is created it has not been sold yet. (item sold status is changed in stock manager)
+        this.soldStatus = false; //when an item is created it has not been sold yet. (item sold status is changed in Stock manager)
         this.itemName = itemName;
     }
 
@@ -40,9 +40,15 @@ public class foodstuff {
         }
     }
 
-
-
     //Methods
-
+public String getItemName() {
+        return this.itemName;
+    }
+public String getFoodType() {
+    return this.foodType;
+}
+public String getIngredients() {
+        return this.ingredients;
+}
 
 }
