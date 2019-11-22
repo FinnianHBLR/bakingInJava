@@ -18,14 +18,14 @@ public class Stock {
 
     public Stock() {
         //This is where a new thing would be added to the list.
-        new FoodStuff("Drink ", "Water, Lemon", 1.0, "Lemon Water");
-        new FoodStuff( "Bakery", "Flower, Sugar and Milk", 5.0, "Bumpkin Bread");
+       allStock.add(new FoodStuff("Drink ", "Water, Lemon", 1.0, "Lemon Water"));
+       allStock.add(new FoodStuff( "Bakery", "Flower, Sugar and Milk", 5.0, "Bumpkin Bread"));
     }
 
 
     //Methods
 
-    static public int getAmount() {
+    public int getAmount() {
         int tempCount = 0;
 
         for (FoodStuff item : allStock) {
