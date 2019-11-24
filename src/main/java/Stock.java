@@ -8,19 +8,21 @@ public class Stock {
     //THIS is where food is kept
     static List<FoodStuff> allStock = new ArrayList<>();
 
-
     //Properties
     private String itemName;
     private String ingredients;
     private int amount;
 
-
     //Constructors, this is for adding to the list. Baking manager will create new items. This will not set the requirements
 
-    public Stock() {
+    public void addStock(String foodType, String ingredients, Double price, String itemName) {
         //This is where a new thing would be added to the list.
+        allStock.add(new FoodStuff(foodType, ingredients, price, itemName));
+
+        /*
        allStock.add(new FoodStuff("Drink ", "Water, Lemon", 1.0, "Lemon Water"));
        allStock.add(new FoodStuff( "Bakery", "Flower, Sugar and Milk", 5.0, "Bumpkin Bread"));
+         */
     }
 
 
@@ -55,12 +57,16 @@ public class Stock {
     public String listIngridiants(String itemName) {
 //A try catch could be used if a user put in a number for example
 
-        for (FoodStuff findItem: allStock) {
+        for (FoodStuff eachItem: allStock) {
 
-            if(itemName == findItem.getItemName()) {
-                return "\n" + findItem.getIngredients();
+            if(itemName == eachItem.getItemName()) {
+                /*System.out.println("PASS Looking for: " + itemName);
+                System.out.println("PASS Comparing To: " +eachItem.getItemName()); */
+                return "\n" + eachItem.getIngredients();
             } else {
-                return null;
+                /*System.out.println("FAIL Looking for: "+ itemName);
+                System.out.println("FAIL Comparing To: " + eachItem.getItemName()); */
+                //THIS CAUSES AN ERROR. This ends to loop before it can look at a second itme. return null;
             }
         }
         return null;
