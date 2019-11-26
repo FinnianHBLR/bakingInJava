@@ -9,9 +9,7 @@ public class Stock {
     static List<FoodStuff> allStock = new ArrayList<>();
 
     //Properties
-    private String itemName;
-    private String ingredients;
-    private int amount;
+
 
     //Constructors, this is for adding to the list. Baking manager will create new items. This will not set the requirements
 
@@ -66,10 +64,41 @@ public class Stock {
             } else {
                 /*System.out.println("FAIL Looking for: "+ itemName);
                 System.out.println("FAIL Comparing To: " + eachItem.getItemName()); */
-                //THIS CAUSES AN ERROR. This ends to loop before it can look at a second itme. return null;
+                //THIS CAUSES AN ERROR. This ends to loop before it can look at a second item. return null;
             }
         }
         return null;
     }
 
+    public String editItemName(String oldName, String newName){
+        //This method takes in a newName and an oldName. Once the object has been found using hte findItem method this will set the name to a new one.
+        findItem(oldName).setItemName(newName);
+        return String.format("%s was set to %s", oldName, newName);
+    }
+
+    //This returns an item to be edited
+    public FoodStuff findItem(String name) {
+        //For each item this will compare names and return the object that has the same name. If not this will return null.
+        for (FoodStuff eachItem: allStock) {
+            if(eachItem.getItemName() == name) {
+                return eachItem;
+            }
+        }
+        return null;
+    }
+
+    public Double getItemPrice(String itemName) {
+        //Finds items again and gets price of that item then that is returned.
+        return findItem(itemName).getPrice();
+    }
+
+    public Double total() {
+        //Gets each item and records price then that is added to a temp int and returned.
+        Double tempCost = 0.0;
+
+        for (FoodStuff eachItem: allStock) {
+           tempCost += eachItem.getPrice();
+        }
+        return tempCost;
+    }
 }

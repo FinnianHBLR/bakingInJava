@@ -6,7 +6,7 @@ public class Main {
         BakingManager bakingManager = new BakingManager();
 
         bakingManager.addFoodItem("Bread", "Water, Sugar, Flower.", 5.0, "Bumpkin Bread");
-        bakingManager.addFoodItem("Drink", "Water, Lemon, Sugar.", 1.0, "Lemon Water");
+        bakingManager.addFoodItem("Drink", "Water, Lemon, Sugar.", 10.0, "Lemon Water");
 
 
 
@@ -15,5 +15,17 @@ public class Main {
         bakingManager.findIngridiants("Bumpkin Bread");
         bakingManager.findIngridiants("Lemon Water");
         bakingManager.findIngridiants("Juice");
+
+        bakingManager.getItemPrice("Lemon Water");
+
+
+        bakingManager.editItemName("Lemon Water","Spring Water");
+        bakingManager.listAllStock();
+
+        bakingManager.totalCost();
+
+        //Sell Item
+        //list menu
+        //Best before date, and refrigerator
     }
 }

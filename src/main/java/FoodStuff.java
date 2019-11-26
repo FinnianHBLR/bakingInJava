@@ -20,7 +20,7 @@ public class FoodStuff {
     }
 
     private void setFoodType(String foodType) {
-        if(foodType == "") {
+        if (foodType == "") {
             this.foodType = "Miscellaneous";
         } else {
             this.foodType = foodType;
@@ -28,27 +28,40 @@ public class FoodStuff {
     }
 
     private void setIngredients(String ingredients) {
-        if(ingredients == "") {
+        if (ingredients == "") {
             this.ingredients = "No ingredients Data";
         } else {
             this.ingredients = ingredients;
         }
     }
-    private void setPrice(Double price){
-        if(price == null){
-            this.price = 0.0;
-        }
+
+    private void setPrice(Double price) {
+            this.price = price;
+    }
+
+    public void setItemName(String newName) {
+        this.itemName = newName;
+    }
+
+    public void setSoldStatus(Boolean newStatus) {
+        this.soldStatus = newStatus;
     }
 
     //Methods
-public String getItemName() {
+    public String getItemName() {
         return this.itemName;
     }
-public String getFoodType() {
-    return this.foodType;
-}
-public String getIngredients() {
+
+    public String getFoodType() {
+        return this.foodType;
+    }
+
+    public String getIngredients() {
         return this.ingredients;
-}
+    }
+
+    public Double getPrice() {
+        return this.price;
+    }
 
 }

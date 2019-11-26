@@ -11,9 +11,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/BakingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BakingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FoodStuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/FoodStuff.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Stock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BakingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BakingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FoodStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FoodStuff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stock.java" afterDir="false" />
     </list>
