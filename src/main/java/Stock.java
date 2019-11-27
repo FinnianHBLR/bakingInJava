@@ -78,13 +78,19 @@ public class Stock {
 
     //This returns an item to be edited
     public FoodStuff findItem(String name) {
-        //For each item this will compare names and return the object that has the same name. If not this will return null.
-        for (FoodStuff eachItem: allStock) {
-            if(eachItem.getItemName() == name) {
-                return eachItem;
+        try{
+            for (FoodStuff eachItem: allStock) {
+                if(eachItem.getItemName() == name) {
+                    return eachItem;
+                }
             }
+            return null;
+        } catch (Exception e) {
+            System.out.println("Find Error");
+            return null;
         }
-        return null;
+        //For each item this will compare names and return the object that has the same name. If not this will return null.
+
     }
 
     public Double getItemPrice(String itemName) {
@@ -101,4 +107,17 @@ public class Stock {
         }
         return tempCost;
     }
+
+
+    //Remove method
+
+    public void removeItem(String itemToRemove) {
+        //Finds and returns the object to be removed from the list.
+        allStock.remove(findItem(itemToRemove));
+    }
+
+    public void sellAndRemoveItem(){
+
+    }
+
 }

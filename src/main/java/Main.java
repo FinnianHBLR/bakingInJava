@@ -5,6 +5,7 @@ public class Main {
         //Create a baking manager
         BakingManager bakingManager = new BakingManager();
 
+
         bakingManager.addFoodItem("Bread", "Water, Sugar, Flower.", 5.0, "Bumpkin Bread");
         bakingManager.addFoodItem("Drink", "Water, Lemon, Sugar.", 10.0, "Lemon Water");
 
@@ -24,8 +25,12 @@ public class Main {
 
         bakingManager.totalCost();
 
-        //Sell Item
-        //list menu
+        bakingManager.removeItem("Spring Water");
+        bakingManager.listAllStock();
+        bakingManager.sellItem("Bumpkin Bread");
+        //Profit etc sell item
+
+        //Buy and sell Ingridiants
         //Best before date, and refrigerator
     }
 }
