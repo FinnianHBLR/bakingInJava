@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a989ff4f-43f1-4559-8341-b4fd4fcd46d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ingredients.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/IngredientsManager.java" afterDir="false" />
+    <list default="true" id="a989ff4f-43f1-4559-8341-b4fd4fcd46d2" name="Default Changelist" comment="Added new ability to add to the list of Ingredients">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Ingredients.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/BakingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/BakingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Stock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/StoreManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BakingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BakingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IngredientsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IngredientsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StoreManager.java" afterDir="false" />
@@ -91,6 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1573692489710</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added new ability to add to the list of Ingredients.">
+      <created>1576029233882</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576029233882</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,5 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added new ability to add to the list of Ingredients." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new ability to add to the list of Ingredients." />
   </component>
 </project>

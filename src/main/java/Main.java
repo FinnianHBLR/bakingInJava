@@ -7,6 +7,18 @@ public class Main {
         IngredientsManager ingredientsManager = new IngredientsManager();
 
 
+        System.out.println(ingredientsManager.addBuyableIngredient("Flour", 5.0));
+        System.out.println(ingredientsManager.addBuyableIngredient("Water", 3.50));
+        System.out.println(ingredientsManager.addBuyableIngredient("Lemon", 2.00));
+        System.out.println(ingredientsManager.addBuyableIngredient("Sugar", 3.0));
+
+        System.out.println(ingredientsManager.buyIngredients("Flour", 5));
+        System.out.println(ingredientsManager.buyIngredients("Sugar", 1));
+        System.out.println(ingredientsManager.buyIngredients("Water", 1));
+
+        System.out.println("Currently in stock there is: " + ingredientsManager.listAllIngredients());
+
+
         bakingManager.addFoodItem("Bread", "Water, Sugar, Flower.", 5.0, "Bumpkin Bread");
         bakingManager.addFoodItem("Drink", "Water, Lemon, Sugar.", 10.0, "Lemon Water");
 
@@ -31,9 +43,8 @@ public class Main {
         bakingManager.sellItem("Bumpkin Bread");
         //Profit etc sell item
 
-        //ingredients.addBuyableIngredients("Flour", 5.0);
-        ingredientsManager.addBuyableIngredient("Flour", 5.0);
         //Buy and sell Ingridiants
-        //Best before date, and refrigerator
+
+    //List all of Ingredients
     }
 }

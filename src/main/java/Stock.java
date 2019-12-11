@@ -18,6 +18,9 @@ public class Stock {
         //This is where a new thing would be added to the list.
         allStock.add(new FoodStuff(foodType, ingredients, price, itemName));
 
+        //THIS IS WHERE Ingredients are REMOVED from list using the amounts.
+
+
         /*
        allStock.add(new FoodStuff("Drink ", "Water, Lemon", 1.0, "Lemon Water"));
        allStock.add(new FoodStuff( "Bakery", "Flower, Sugar and Milk", 5.0, "Bumpkin Bread"));

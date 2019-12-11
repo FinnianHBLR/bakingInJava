@@ -2,6 +2,7 @@ public class StoreManager {
     //Properties
     Stock stock = new Stock();  //Instance of stock for ingredients.
 
+
     private Double bankAccout;
     //Constructors
 

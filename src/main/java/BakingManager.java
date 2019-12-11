@@ -2,7 +2,7 @@ public class BakingManager {
     //Properties
     //Creates an instance of stock
     Stock stock = new Stock();
-    StoreManager storeManager = new StoreManager(250.0);
+    static StoreManager storeManager = new StoreManager(250.0);
 
     //Constructors
 
@@ -54,4 +54,8 @@ public class BakingManager {
         System.out.println(itemName + " Was Sold At the price of $" + stock.findItem(itemName).getPrice() + " Bank Balance is now $" + storeManager.getBankAccout());
         removeItem(itemName);
     }
+
+
+
+
 }
