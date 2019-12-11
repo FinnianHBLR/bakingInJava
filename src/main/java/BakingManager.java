@@ -49,6 +49,7 @@ public class BakingManager {
 
     public void sellItem(String itemName) {
         //This gets the  item the user wishes to sell and finds the price, adds it to the total bank account. Once the item has been removed a new balance is printed out
+      //Sets bank account
        storeManager.setBankAccout(storeManager.getBankAccout() + stock.findItem(itemName).getPrice());
         System.out.println(itemName + " Was Sold At the price of $" + stock.findItem(itemName).getPrice() + " Bank Balance is now $" + storeManager.getBankAccout());
         removeItem(itemName);

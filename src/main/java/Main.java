@@ -4,6 +4,7 @@ public class Main {
 
         //Create a baking manager
         BakingManager bakingManager = new BakingManager();
+        IngredientsManager ingredientsManager = new IngredientsManager();
 
 
         bakingManager.addFoodItem("Bread", "Water, Sugar, Flower.", 5.0, "Bumpkin Bread");
@@ -30,6 +31,8 @@ public class Main {
         bakingManager.sellItem("Bumpkin Bread");
         //Profit etc sell item
 
+        //ingredients.addBuyableIngredients("Flour", 5.0);
+        ingredientsManager.addBuyableIngredient("Flour", 5.0);
         //Buy and sell Ingridiants
         //Best before date, and refrigerator
     }

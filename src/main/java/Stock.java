@@ -5,10 +5,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Stock {
-    //THIS is where food is kept
-    static List<FoodStuff> allStock = new ArrayList<>();
 
     //Properties
+
+    //THIS is where food is kept
+    static List<FoodStuff> allStock = new ArrayList<>();
 
 
     //Constructors, this is for adding to the list. Baking manager will create new items. This will not set the requirements
@@ -22,7 +23,6 @@ public class Stock {
        allStock.add(new FoodStuff( "Bakery", "Flower, Sugar and Milk", 5.0, "Bumpkin Bread"));
          */
     }
-
 
     //Methods
 
@@ -119,5 +119,4 @@ public class Stock {
     public void sellAndRemoveItem(){
 
     }
-
 }
