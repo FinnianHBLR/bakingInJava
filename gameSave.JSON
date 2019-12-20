@@ -1,1 +1,6 @@
-{"UserBankAccount1":"1","Statement":[[-25.0,-3.0,-3.5,5.0]],"CurrentAmount":223.5}
+{"IngredientsInStock":"[{\"costOfIngredient\":5.0,\"nameOfIngredient\":\"Flour\",\"amount\":5},{\"costOfIngredient\":3.0,\"nameOfIngredient\":\"Sugar\",\"amount\":1},{\"costOfIngredient\":3.5,\"nameOfIngredient\":\"Water\",\"amount\":1}]",
+  "Buyalbeingredients":"[{\"costOfIngredient\":5.0,\"nameOfIngredient\":\"Flour\",\"amount\":0},{\"costOfIngredient\":3.5,\"nameOfIngredient\":\"Water\",\"amount\":0},{\"costOfIngredient\":2.0,\"nameOfIngredient\":\"Lemon\",\"amount\":0},{\"costOfIngredient\":3.0,\"nameOfIngredient\":\"Sugar\",\"amount\":0}]",
+  "UserBankAccount1":"1",
+  "Statement":[-25.0,-3.0,-3.5,5.0],
+  "CurrentAmount":223.5,
+  "SellableItems":"[{\"foodType\":\"Wrap\",\"ingredients\":\"Flour, Water, Chicken, source\",\"price\":6.0,\"itemName\":\"Chicken Wrap\",\"soldStatus\":false}]"}

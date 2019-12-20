@@ -41,13 +41,16 @@ public class Main {
         bakingManager.removeItem("Spring Water");
         bakingManager.listAllStock();
         bakingManager.sellItem("Bumpkin Bread");
+        
+        //Buy Item so there is something for gjson to output as the others are sold or removed
+        bakingManager.addFoodItem("Wrap", "Flour, Water, Chicken, source", 6.0, "Chicken Wrap");
         //Profit etc sell item
 
         //Buy and sell Ingridiants
 //Average sales
     //List all of Ingredients
 
-        //save load and send data
-        SaveLoadSendJSON.writeToJSON(bakingManager.storeManager.getBankAccout());
+        //save load and send data. NEEDS TRY CATCH
+        SaveLoadSendJSON.savegameState();
     }
 }

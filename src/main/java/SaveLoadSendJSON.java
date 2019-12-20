@@ -1,4 +1,5 @@
 //import netscape.javascript.JSObject; Different library
+import com.google.gson.Gson;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -16,20 +17,33 @@ public class SaveLoadSendJSON {
 
     private static List<Double> statement = new ArrayList<>();
 
-    public static void writeToJSON(Double currentbankAccount) throws Exception {
+    public static void savegameState() throws Exception {
         //Makes sure program is aware this could cause an exception
+
+
         JSONObject newObject = new JSONObject();
-        //Save bank account
+        //BANK ACCOUNT
         //Creates a bank account, this would be entered by user at start of game.
         newObject.put("UserBankAccount1", "1");
-        newObject.put("CurrentAmount", currentbankAccount);
+        newObject.put("CurrentAmount", BakingManager.storeManager.getBankAccout());
 
-        JSONArray statemnet = new JSONArray();
+        //STATEMENT
+        //NOTE: Could use a JSONArray but, nah. Instead just get the array and place inside of JSON file, in theory should be the same.
+        newObject.put("Statement", getStatement());
 
-        statemnet.add(getStatement());
 
-        newObject.put("Statement", statemnet);
+        //INGREDIENTS
+        Gson gson = new Gson(); //Converts Objects using gjson!
 
+        newObject.put("IngredientsInStock", gson.toJson(IngredientsManager.ingredientStock));
+
+        //BUYABLE
+        newObject.put("Buyalbeingredients", gson.toJson(IngredientsManager.buyableIngredients));
+
+        //STOCK Of Crated Items
+        newObject.put("SellableItems", gson.toJson(Stock.getAllStock()));
+
+        //Writes File.
         Files.write(Paths.get("gameSave.JSON"), newObject.toJSONString().getBytes());
 
 
@@ -45,8 +59,8 @@ public class SaveLoadSendJSON {
         return statement;
     }
 
-    //LOAD
-
+    //LOAD, STOCK, BUYABLE, INGRIDIANTS
+    //Will use gjson to load files.
 
 
 }

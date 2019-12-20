@@ -22,11 +22,13 @@ public class StoreManager {
     public void setBankAccout(Double newAccountTotal) {
         //Gets old data and collects old info and compares to old then adds to statement.
         Double statementRecord = newAccountTotal - this.bankAccout;
-
+        //Logs out Statements
         System.out.println(String.format("A Transaction of %f Was Recorded", statementRecord));
 
+        //Saves Statements in the record whenever a transaction is processed
         saveLoadSendJSON.updateStatement(statementRecord);
 
+        //Updates new bank account
         this.bankAccout = newAccountTotal;
     }
 

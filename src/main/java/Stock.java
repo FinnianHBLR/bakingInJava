@@ -9,6 +9,7 @@ public class Stock {
     //Properties
 
     //THIS is where food is kept
+    //NOTE: Should be private and use getters and setters
     static List<FoodStuff> allStock = new ArrayList<>();
 
 
@@ -39,7 +40,7 @@ public class Stock {
         return tempCount;
     }
 
-    public String getAllStock() {
+    public String getAllStockNames() {
         String collection = "";
 
         //int count = 0;
@@ -121,5 +122,8 @@ public class Stock {
 
     public void sellAndRemoveItem(){
 
+    }
+    public static List<FoodStuff> getAllStock(){
+        return allStock;
     }
 }

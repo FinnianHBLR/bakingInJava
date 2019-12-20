@@ -15,7 +15,7 @@ public class BakingManager {
     }
 
     public void listAllStock() {
-        System.out.println("All Items in list: \n" + stock.getAllStock() + "------");
+        System.out.println("All Items in list: \n" + stock.getAllStockNames() + "------");
     }
 
     public void findIngridiants(String find) {
