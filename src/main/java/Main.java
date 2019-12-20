@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //System.out.println("Welcome To baking in Java");
 
         //Create a baking manager
@@ -44,7 +44,10 @@ public class Main {
         //Profit etc sell item
 
         //Buy and sell Ingridiants
-
+//Average sales
     //List all of Ingredients
+
+        //save load and send data
+        SaveLoadSendJSON.writeToJSON(bakingManager.storeManager.getBankAccout());
     }
 }
