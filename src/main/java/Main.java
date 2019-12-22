@@ -46,11 +46,11 @@ public class Main {
         bakingManager.addFoodItem("Wrap", "Flour, Water, Chicken, source", 6.0, "Chicken Wrap");
         //Profit etc sell item
 
-        //Buy and sell Ingridiants
-//Average sales
-    //List all of Ingredients
+        //Buy and sell Ingredients
+        //Average sales
+        //List all of Ingredients
 
         //save load and send data. NEEDS TRY CATCH
-        SaveLoadSendJSON.savegameState();
+        SaveLoadSendJSON.saveGameState();
     }
 }

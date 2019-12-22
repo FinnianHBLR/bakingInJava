@@ -17,7 +17,7 @@ public class SaveLoadSendJSON {
 
     private static List<Double> statement = new ArrayList<>();
 
-    public static void savegameState() throws Exception {
+    public static void saveGameState() throws Exception {
         //Makes sure program is aware this could cause an exception
 
 
@@ -52,6 +52,7 @@ public class SaveLoadSendJSON {
 
     public void updateStatement(Double newRecord) {
         this.statement.add(newRecord);
+        //Whenever a transaction is processed this will update the array.
 
     }
 
