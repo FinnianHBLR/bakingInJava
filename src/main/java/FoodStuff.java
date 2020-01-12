@@ -1,17 +1,23 @@
+import com.sun.scenario.effect.impl.prism.PrRenderInfo;
+
+import java.util.LinkedList;
 import java.util.List;
 import  java.math.BigDecimal; //use bigDecimal in the math libery so it wont complane
 
 public class FoodStuff {
     //Properties
     private String foodType;
-    private String ingredients;
+    //private String ingredients;     //NEEDS TO BE AN ARRAY
+
+    private List<String> ingredients  = new LinkedList<>();
+
     private Double price;
     private String itemName;
     private Boolean soldStatus;
 
     //Constructors, for creating new food item object. uses methods to check if the value is valid
 
-    public FoodStuff(String foodType, String ingredients, Double price, String itemName) {
+    public FoodStuff(String foodType, List<String> ingredients, Double price, String itemName) {
         setFoodType(foodType);
         setIngredients(ingredients);
         setPrice(price);
@@ -27,11 +33,13 @@ public class FoodStuff {
         }
     }
 
-    private void setIngredients(String ingredients) {
-        if (ingredients == "") {
-            this.ingredients = "No ingredients Data";
+    private void setIngredients(List<String> ingredients) {
+        if (ingredients.isEmpty()) {
+            //If there is no data add No ingredients
+            this.ingredients.add("No ingredients Data");
         } else {
-            this.ingredients = ingredients;
+            //Add the new ingredients to the list. THIS Adds both lists together.
+            this.ingredients.addAll(ingredients);
         }
     }
 
@@ -57,7 +65,8 @@ public class FoodStuff {
     }
 
     public String getIngredients() {
-        return this.ingredients;
+        //Returns Array as String
+        return this.ingredients.toString();
     }
 
     public Double getPrice() {

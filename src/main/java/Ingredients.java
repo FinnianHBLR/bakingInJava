@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Ingredients {
 
-        //Properties
+        //Properties. FOR INDIVIDUAL ITEMS.
         private Double costOfIngredient;
         private String nameOfIngredient;
         private int amount;

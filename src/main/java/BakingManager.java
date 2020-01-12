@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class BakingManager {
     //Properties
     //Creates an instance of stock
@@ -23,9 +26,34 @@ public class BakingManager {
         System.out.println((stock.listIngridiants(find) == null)? String.format("The Item %s You Searched For Was Not Found!", find) : "The Item " + find + " Contains: " + stock.listIngridiants(find) + "\n-----");
     }
 
-    public void addFoodItem(String foodType, String ingridiants, Double price, String itemName){
+    public void addFoodItem(String foodType, List<String> ingredients, Double price, String itemName){
         //Adds new item using data from main
-        stock.addStock(foodType, ingridiants, price, itemName);
+
+        //Checks for Ingredients and removes them. If Ingredient amount is at 0 it will be removed from the list.
+
+        //Check
+        //Foreach
+        /*for (String selectedIngredient : ingredients) {
+            //Compare to list of current ingredients
+
+            if(selectedIngredient.toString().contains(IngredientsManager.getIngredientStock.)) {
+
+
+            }
+        } */
+
+        if(IngredientsManager.isCookable(ingredients)) {
+            //Remove. I am aware that there is no need for "=="
+            IngredientsManager.removeIngredients(ingredients);
+            //New Item
+
+            //Must both be successful for object creation.
+            stock.addStock(foodType, ingredients, price, itemName);
+        } else {
+            System.out.println("Item could not be created");
+        }
+
+
     }
 
     public void editItemName(String oldName, String newName) {

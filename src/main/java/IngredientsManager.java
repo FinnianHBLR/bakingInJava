@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 public class IngredientsManager {
@@ -43,12 +44,33 @@ public class IngredientsManager {
         return null;
     }
 
-    public String listAllIngredients(){
+    public String listAllIngredients(){     //List all Ingredients in stock
         StringBuilder tempName = new StringBuilder();
         for (Ingredients selectedIngredient: ingredientStock) {
             //Adds stings together and adds spaces to separate them.
-            tempName.append(selectedIngredient.getNameOfIngredient()).append(" ");
+            tempName.append(selectedIngredient.getNameOfIngredient()).append("-X").append(selectedIngredient.getAmount()).append(" ");
         }
         return tempName.toString();
     }
+
+    public static boolean isCookable(List<String> ingredientsToCheck) {
+        //I call this next one...The Logic bomb...Observe.
+
+        //Controlled in bakingmanager
+
+        https://howtodoinjava.com/java/collections/arraylist/compare-two-arraylists/
+
+
+//        4. Compare two arraylists – find common elements
+
+        return allowBake;
+    }
+
+    public static void removeIngredients(List<String> ingredientsToRemove) {
+
+
+
+    }
+
+
 }

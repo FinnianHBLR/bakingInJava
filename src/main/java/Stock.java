@@ -15,7 +15,7 @@ public class Stock {
 
     //Constructors, this is for adding to the list. Baking manager will create new items. This will not set the requirements
 
-    public void addStock(String foodType, String ingredients, Double price, String itemName) {
+    public void addStock(String foodType, List<String> ingredients, Double price, String itemName) {
         //This is where a new thing would be added to the list.
         allStock.add(new FoodStuff(foodType, ingredients, price, itemName));
 
